@@ -8,4 +8,4 @@ Application created to demonstrate :
 
 
 # Architecture
-<a><img src="https://github.com/khandelwal-arpit/springboot-starterkit/blob/master/docs/images/spring-framework.png" alt="spring boot"></a>
+<a><img src="docs/images/Architecture.png" alt="spring boot"></a>
