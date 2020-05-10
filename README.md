@@ -7,6 +7,18 @@ Application created to demonstrate :
 3. How to build docker image for each microservice. 
 4. Simple use case to demonstrate circuit breaker using Netflix Hystrix.
 
+# Upcoming enhancement
+1. Asynchronous communication using Message Broker(RabbitMQ or Kafka)
+2. Integrate Spring Security for Authentication and Authorization.
+
+# Technology
+1. Spring Boot
+2. Spring Cloud
+3. Spring Data
+4. Netflix Eureka(Service Discovery)
+5. Hystrix (Circuit Breaker)
+6. Spring Dev Tools
+7. Thymeleaf as Template
 
 # Architecture
 <a><img src="docs/images/Architecture.png" alt="Architecture"></a>
