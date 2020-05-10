@@ -1,9 +1,9 @@
 # minibank-springboot-microservices(Development Still in Progress)
 
 ## Table of Contents ##
-1.[Scope](#Application Scope)
+1.[Scope](#Application-Scope)
 
-## Application Scope ## :
+## Application Scope ##
 
 1. How to build microservices using spring-boot. 
 2. How to register microservices in Service registry using Netflix Eureka.
