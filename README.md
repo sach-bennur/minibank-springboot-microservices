@@ -77,6 +77,14 @@ Open http://localhost:8080
 
 <a><img src="docs/images/Home.png" alt="Home UI"></a>
 
+# Manage Benificiary
+
+<a><img src="docs/images/Manage.png" alt="Manage Benificiary UI"></a>
+
+# Home Page
+
+<a><img src="docs/images/Transfer.png" alt="Transfer UI"></a>
+
 
 # Feedback
 Email : sach.bennur@gmail.com
