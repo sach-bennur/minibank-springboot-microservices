@@ -28,6 +28,10 @@ Open http://localhost:9090 to see the service registry(Eureka Server UI)
 
 
 # Running in Docker Container(Using JDK 1.8 for now)
+
+All the Below Commands can be Automated and simplied by using docker-compose.
+For Demonstration, Using basic docker commands to know how it works internally.
+
 	1. Docker Commands to build image
 	 
 	• Open Terminal in servicediscovery :  docker build --tag servicediscovery  .
