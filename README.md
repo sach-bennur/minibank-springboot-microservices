@@ -49,31 +49,32 @@ Open http://localhost:9090 to see the service registry(Eureka Server UI)
 
 
 ## Running in Docker Container ##
+**(Using JDK 1.8 for now)
 
 All the Below Commands can be Automated and simplied by using docker-compose.
 For Demonstration, Using basic docker commands to know how it works internally.
 
 	1. Docker Commands to build image
 	 
-	• Open Terminal in servicediscovery :  docker build --tag servicediscovery  .
-	• Open Terminal in minibank-ui :  docker build --tag minibank-ui .
-	• Open Terminal in minibank-service :  docker build --tag minibank-service .
+	• Open Terminal in servicediscovery :  **docker build --tag servicediscovery  .
+	• Open Terminal in minibank-ui :  **docker build --tag minibank-ui .
+	• Open Terminal in minibank-service :  **docker build --tag minibank-service .
 
 	2. Docker Commands to run container
 
 	Run Db container:  
 	
-	• docker pull mongo
-	• docker  run -it --name mongo-minibank -d mongo
+	• **docker pull mongo
+	• **docker  run -it --name mongo-minibank -d mongo
 		
 	Create and Start Containers:
 
-	• Service Discovery : docker run -p 9090:9090 -it --name servicediscovery -d servicediscovery
+	• Service Discovery : **docker run -p 9090:9090 -it --name servicediscovery -d servicediscovery
 	
 	Running the container + Linking it to dependent containers
 	
-	• MiniBank-UI          : docker run -p 8080:8080 -it --name minibank-ui --link servicediscovery -d minibank-ui
-	• MiniBank-Service : docker run -p 8081:8081 -it --name minibankservice --link servicediscovery --link mongo-minibank -d minibank-service
+	• MiniBank-UI          : **docker run -p 8080:8080 -it --name minibank-ui --link servicediscovery -d minibank-ui
+	• MiniBank-Service : **docker run -p 8081:8081 -it --name minibankservice --link servicediscovery --link mongo-minibank -d minibank-service
 
 
 Open http://localhost:8080
