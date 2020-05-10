@@ -81,7 +81,7 @@ Open http://localhost:8080
 
 <a><img src="docs/images/Manage.png" alt="Manage Benificiary UI"></a>
 
-# Trasnfer
+# Transfer
 
 <a><img src="docs/images/Transfer.png" alt="Transfer UI"></a>
 
