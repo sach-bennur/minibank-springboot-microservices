@@ -25,7 +25,7 @@
 2. Spring Cloud
 3. Spring Data
 4. Netflix Eureka(Service Discovery)
-5. Hystrix (Circuit Breaker)
+5. Hystrix (Latency and Fault tolerance)
 6. Spring Dev Tools
 7. Thymeleaf as Template
 
