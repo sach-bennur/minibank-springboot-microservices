@@ -1,7 +1,7 @@
 # minibank-springboot-microservices(Development Still in Progress)
 
 ## Table of Contents ##
-1. [Scope](#Application-Scope)
+1. [Application Scope](#Application-Scope)
 2. [Upcoming Enhancement](#Upcoming-enhancement)
 3. [Technology](#Technology)
 4. [Architecture](#Architecture)
