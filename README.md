@@ -74,7 +74,7 @@ For Demonstration, Using basic docker commands to know how it works internally.
 	
 	Running the container + Linking it to dependent containers
 	
-	• MiniBank-UI          : docker run -p 8080:8080 -it --name minibank-ui --link servicediscovery -d minibank-ui
+	• MiniBank-UI      : docker run -p 8080:8080 -it --name minibank-ui --link servicediscovery -d minibank-ui
 	• MiniBank-Service : docker run -p 8081:8081 -it --name minibankservice --link servicediscovery --link mongo-minibank -d minibank-service
 
 
