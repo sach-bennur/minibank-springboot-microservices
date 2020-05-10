@@ -27,7 +27,7 @@ Open http://localhost:9090 to see the service registry(Eureka Server UI)
 <a><img src="docs/images/Eureka.png" alt="Eureka UI"></a>
 
 
-# Running in Docker Container
+# Running in Docker Container(Using JDK 1.8 for now)
 	1. Docker Commands to build image
 	 
 	• Open Terminal in servicediscovery :  docker build --tag servicediscovery  .
