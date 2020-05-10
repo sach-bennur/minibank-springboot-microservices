@@ -6,3 +6,6 @@ Application created to demonstrate :
 3. How to build docker image for each microservice. 
 4. Simple use case to demonstrate circuit breaker using Netflix Hystrix.
 
+
+# Architecture
+<a><img src="https://github.com/khandelwal-arpit/springboot-starterkit/blob/master/docs/images/spring-framework.png" alt="spring boot"></a>
