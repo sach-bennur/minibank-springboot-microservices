@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout/Layout}">
+<head>
+<title>Content page 1</title>
+</head>
+<body>
+
+	<!-- ============================================================== -->
+	<!-- Container fluid  -->
+	<!-- ============================================================== -->
+	<div class="container-fluid" layout:fragment="content">
+		<!-- ============================================================== -->
+		<!-- Bread crumb and right sidebar toggle -->
+		<!-- ============================================================== -->
+		<div class="row page-titles">
+			<div class="col-md-5 col-8 align-self-center">
+				<h3 class="text-themecolor">Transfer</h3>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home">Home</a></li>
+					<li class="breadcrumb-item active">Transfer</li>
+				</ol>
+			</div>
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Bread crumb and right sidebar toggle -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- Start Page Content -->
+		<!-- ============================================================== -->
+		<!-- Row -->
+		<div class="row">
+			<!-- Column -->
+			<div class="col-lg-6 col-md-5">
+				<div class="card">
+					<div class="card-block">
+						<form action="#" method="POST"
+							class="form-horizontal form-material" th:action="@{/transfer}"
+							th:object="${transferFormData}">
+							<div class="row">
+								<div class="col-12">
+									<div class="d-flex flex-wrap">
+										<div>
+											<h3 class="card-title">Add Payee Details</h3>
+											<div class="form-group row">
+												<label for="payeeName" class="col-md-5">Payee Name</label>
+												<div class="col-md-7">
+													<input type="text" th:field="*{payeeName}"
+														class="form-control form-control-line" name="payeeName"
+														id="payeeName">
+												</div>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('payeeName')}"
+													th:errors="*{payeeName}"></small>
+											</div>
+											<div class="form-group row">
+												<label for="accountNumber" class="col-md-5">Account
+													Number</label>
+												<div class="col-md-7">
+													<input type="text" th:field="*{accountNumber}"
+														class="form-control form-control-line"
+														name="accountNumber" id="accountNumber">
+												</div>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('accountNumber')}"
+													th:errors="*{accountNumber}"></small>
+											</div>
+
+
+											<div class="form-group row">
+												<label for="ifscCode" class="col-md-5">IFSC Code</label>
+												<div class="col-md-7">
+													<input type="text" th:field="*{ifscCode}"
+														class="form-control form-control-line" name="ifscCode"
+														id="ifscCode">
+												</div>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('ifscCode')}"
+													th:errors="*{ifscCode}"></small>
+											</div>
+
+											<div class="form-group row">
+												<label for="accountType" class="col-md-5">Transfer
+													From</label>
+													<div class="col-md-7">
+												<input type="text" th:field="*{transferFrom}" disabled class="form-control">
+												 <input type="hidden" th:field="*{transferFrom}" class="form-control" name="transferFrom">
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label for="accountType" class="col-md-5">Balance
+													</label>
+												<h3 th:text="*{balance}"></h3>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('balance')}"
+													th:errors="*{balance}"></small>
+											</div>
+
+
+											<div class="form-group row">
+												<label for="transferredMoney" class="col-md-5">Amount</label>
+												<div class="col-md-7">
+													<input type="text" th:field="*{transferredMoney}"
+														class="form-control form-control-line"
+														name="transferredMoney" id="transferredMoney">
+												</div>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('transferredMoney')}"
+													th:errors="*{transferredMoney}"></small>
+											</div>
+
+
+											<div class="form-group row">
+												<label for="comment" class="col-md-5">Comment</label>
+												<div class="col-md-7">
+													<textarea th:field="*{comment}"
+														class="form-control form-control-line" name="comment"
+														id="comment"></textarea>
+												</div>
+												<small class="text-danger-padded"
+													th:if="${#fields.hasErrors('comment')}"
+													th:errors="*{comment}"></small>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-12" align="center">
+													<button class="btn btn-success">Transfer</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-5">
+				<div class="card">
+					<div class="card-block">
+						<div class="row">
+							<div class="col-12">
+								<div class="d-flex flex-wrap">
+									<div>
+										<h3 class="card-title">Transaction History</h3>
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th>Transaction Type</th>
+													<th>Status</th>
+													<th>Amount</th>
+												</tr>
+											</thead>
+											<tbody>
+												<th:block
+													th:each="transaction,iterationStatus : ${transactionData}">
+													<tr>
+														<td th:text="${transaction.payeeName}"></td>
+														<td>Success</td>
+														<td th:text="${transaction.transferredMoney}"></td>
+													</tr>
+												</th:block>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Row -->
+			<!-- ============================================================== -->
+			<!-- End PAge Content -->
+			<!-- ============================================================== -->
+		</div>
+</body>
+
+</html>
