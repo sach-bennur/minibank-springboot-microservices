@@ -73,7 +73,7 @@ Open http://localhost:8080
 
 <a><img src="docs/images/Login.png" alt="Login UI"></a>
 
-# Home Page
+# Account Dashboard
 
 <a><img src="docs/images/Home.png" alt="Home UI"></a>
 
@@ -81,7 +81,7 @@ Open http://localhost:8080
 
 <a><img src="docs/images/Manage.png" alt="Manage Benificiary UI"></a>
 
-# Home Page
+# Trasnfer
 
 <a><img src="docs/images/Transfer.png" alt="Transfer UI"></a>
 
