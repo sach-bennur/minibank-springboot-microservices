@@ -1,6 +1,9 @@
 # minibank-springboot-microservices(Development Still in Progress)
 
-Application created to demonstrate :
+## Table of Contents ##
+1.[Scope](#Application Scope)
+
+## Application Scope ## :
 
 1. How to build microservices using spring-boot. 
 2. How to register microservices in Service registry using Netflix Eureka.
@@ -8,8 +11,8 @@ Application created to demonstrate :
 4. Simple use case to demonstrate circuit breaker using Netflix Hystrix.
 
 # Upcoming enhancement
-1. Asynchronous communication using Message Broker(RabbitMQ or Kafka)
-2. Integrate Spring Security for Authentication and Authorization.
+1. Asynchronous communication using Message Broker(**RabbitMQ or Kafka**)
+2. Integrate **Spring Security** for Authentication and Authorization.
 
 # Technology
 1. Spring Boot
