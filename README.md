@@ -44,6 +44,7 @@
 3. Start "minibank-ui" microservice using mvn spring-boot:run
 4. Start "minibank-service" microservice using mvn spring-boot:run
 
+Open http://localhost:8080 to see the Application UI.
 Open http://localhost:9090 to see the service registry(Eureka Server UI)
 <a><img src="docs/images/Eureka.png" alt="Eureka UI"></a>
 
