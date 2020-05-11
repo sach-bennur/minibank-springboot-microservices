@@ -45,7 +45,9 @@
 4. Start "minibank-service" microservice using mvn spring-boot:run
 
 Open http://localhost:8080 to see the Application UI.
+
 Open http://localhost:9090 to see the service registry(Eureka Server UI)
+
 <a><img src="docs/images/Eureka.png" alt="Eureka UI"></a>
 
 
@@ -78,8 +80,6 @@ For Demonstration, Using basic docker commands to know how it works internally.
 	• MiniBank-UI      : docker run -p 8080:8080 -it --name minibank-ui --link servicediscovery -d minibank-ui
 	• MiniBank-Service : docker run -p 8081:8081 -it --name minibankservice --link servicediscovery --link mongo-minibank -d minibank-service
 
-
-Open http://localhost:8080
 
 # Login Page
 
